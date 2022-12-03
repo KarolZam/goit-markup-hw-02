@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="agency" href="./agencja.html" />
-    <link rel="Contact" href="./kontakt.html" />
+    <link rel="agency" href="images/agencja.html" />
+    <link rel="Contact" href="images/kontakt.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,59 +19,76 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html">
-        <span class="logo-color-web">Web</span
-        ><span class="logo-color-studio">Studio</span></a
-      >
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./agencja.html">Agencja</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./kontakt.html">Kontakt</a>
-          </li>
-        </ul>
+      <nav class="navigation wrapper">
+        <div class="nav-left-site">
+          <a class="logo" href="index.html">
+            <span class="logo-color-web">Web</span
+            ><span class="logo-color-studio">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link" href="./agencja.html">Agencja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-links">
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          ><br />
+          <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
       </nav>
-      <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a
-      ><br />
-      <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
     </header>
     <section class="order">
-      <h1 class="order-header">
-        Efektywne rozwiązania<br />
-        dla waszego biznesu
-      </h1>
-      <button class="order-btn" type="button">Zamów usługe</button>
+      <div class="order-cont">
+        <h1 class="order-header wrapper">
+          Efektywne rozwiązania<br />
+          dla waszego biznesu
+        </h1>
+        <div class="justify-btn wrapper">
+          <button class="order-btn" type="button">Zamów usługe</button>
+        </div>
+      </div>
     </section>
-    <main>
-      <h3 class="main-header">Lorem ipsum</h3>
-      <p class="main-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-        sem. Sed non sodales dui. Interdum et malesuada
-      </p>
-      <h3 class="main-header">Lorem ipsum</h3>
-      <p class="main-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-        sem. Sed non sodales dui. Interdum et malesuada
-      </p>
-      <h3 class="main-header">Lorem ipsum</h3>
-      <p class="main-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-        sem. Sed non sodales dui. Interdum et malesuada
-      </p>
-      <h3 class="main-header">Lorem ipsum</h3>
-      <p class="main-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-        sem. Sed non sodales dui. Interdum et malesuada
-      </p>
+    <main class="main-grid wrapper">
+      <div class="main-cont">
+        <h3 class="main-header">Lorem ipsum</h3>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+          sem. Sed non sodales dui. Interdum et malesuada
+        </p>
+      </div>
+      <div class="main-cont">
+        <h3 class="main-header">Lorem ipsum</h3>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+          sem. Sed non sodales dui. Interdum et malesuada
+        </p>
+      </div>
+      <div class="main-cont">
+        <h3 class="main-header">Lorem ipsum</h3>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+          sem. Sed non sodales dui. Interdum et malesuada
+        </p>
+      </div>
+      <div class="main-cont">
+        <h3 class="main-header">Lorem ipsum</h3>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+          sem. Sed non sodales dui. Interdum et malesuada
+        </p>
+      </div>
     </main>
     <section class="offert">
       <h2 class="offert-header">Czym się zajmujemy</h2>
-      <ul class="list">
+      <ul class="offert-list list wrapper">
         <li class="offert-list-item">
           <img
             src="images/computer.jpg"
@@ -100,7 +117,8 @@
     </section>
     <section class="team-section">
       <h2 class="team-header">Nasz zespół</h2>
-      <ul class="list">
+      <div class="wrapper">
+      <ul class="team-list list">
         <li>
           <figure class="team-item">
             <img
@@ -160,21 +178,26 @@
       </ul>
     </section>
     <footer class="footer">
-      <a class="logo" href="index.html">
-        <span class="logo-color-web">Web</span
-        ><span class="logo-color-studio">Studio</span></a
-      >
-      <address>
-        <ul class="list">
-          <li class="address-item">Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a class="footer-item" href="info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a class="footer-item" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+      <div class="footer-spaceing wrapper">
+        <a class="logo" href="index.html">
+          <span class="logo-color-web">Web</span
+          ><span class="logo-color-studio">Studio</span></a
+        >
+        <address>
+          <ul class="list">
+            <li class="address-item">Warszawa, Aleje Jerozolimskie 21</li>
+            <li>
+              <a class="footer-item" href="info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-item" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </div>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
