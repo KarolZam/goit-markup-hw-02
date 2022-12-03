@@ -156,7 +156,8 @@ body {
     line-height: 24px;
     color: var(--light-grey);
 }
-.offert{
+
+.offert {
     margin-top: 133px;
 }
 
@@ -226,9 +227,10 @@ body {
 .footer {
     background-color: var(--footer);
 }
-.footer-spaceing{
-padding: 60px;
-margin: 0;
+
+.footer-spaceing {
+    padding: 60px;
+    margin: 0;
 }
 
 .address-item {
