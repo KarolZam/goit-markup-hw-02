@@ -8,20 +8,8 @@
     --footer: #2F303A;
 }
 
-.grid {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
-
-img {
-    max-width: 100%;
-}
-
 body {
     font-family: Roboto;
-    max-width: 1600px;
-    margin: 0;
 }
 
 .list {
@@ -29,21 +17,14 @@ body {
     padding-left: 0;
 }
 
+.site-nav {
+    border-bottom: 2px solid #ccc;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    box-sizing: border-box;
-}
-
-.nav-left-site {
-    display: flex;
-    align-items: center;
+    padding: 0;
 }
 
 .logo {
@@ -53,7 +34,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    margin-right: 93px;
+    text-align: center;
 }
 
 .logo-color-web {
@@ -64,11 +45,25 @@ body {
     color: var(--black);
 }
 
-.nav-list {
-    margin: 0;
-    padding: 0;
+.logo-color-studio-footer {
+    color: var(--white);
+}
+
+.flex-nav-container {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+    margin-left: 93px;
 }
 
 .nav-link {
@@ -79,10 +74,16 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-left: 46px;
 }
 
 .nav-link:hover, .contact:hover, .footer-item:hover {
     color: var(--blue);
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
 }
 
 .contact {
@@ -92,21 +93,15 @@ body {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: left;
-}
-
-.contact-links {
-    display: flex;
-    gap: 50px;
-    align-items: center;
 }
 
 .order {
     background-color: var(--dark-grey);
 }
 
-.order-cont {
-    padding: 200px;
+.order-container {
+    padding: 200px 0;
+    text-align: center;
 }
 
 .order-header {
@@ -116,27 +111,26 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
-    text-align: center;
-}
-
-.justify-btn {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
 }
 
 .order-btn {
+    margin-top: 40px;
     background: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    padding: 10px 41px;
 }
 
 .order-btn:hover {
     background-color: var(--white);
     color: var(--blue);
+}
+
+.main-flex {
+    display: flex;
+    padding-top: 94px;
 }
 
 .main-header {
@@ -146,10 +140,6 @@ body {
     color: var(--dark-grey);
 }
 
-.main-grid {
-    display: flex;
-}
-
 .main-text {
     font-size: 14px;
     font-weight: 400;
@@ -157,16 +147,14 @@ body {
     color: var(--light-grey);
 }
 
-.offert {
-    margin-top: 133px;
+.offert-grid {
+    padding: 133px 0 55px 0;
 }
 
 .offert-header {
     line-height: 42.19px;
     color: var(--dark-grey);
     text-align: center;
-    display: flex;
-    justify-content: center;
     padding-bottom: 50px;
 }
 
@@ -179,6 +167,10 @@ body {
     background-color: #F5F4FA;
 }
 
+.team-grid {
+    padding: 94px 0;
+}
+
 .team-header {
     font-size: 36px;
     font-weight: 700;
@@ -186,51 +178,50 @@ body {
     letter-spacing: 0.03em;
     color: var(--dark-grey);
     text-align: center;
-    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .team-list {
     display: flex;
+    margin: 0;
+    gap: 30px;
 }
 
 .team-item {
+    margin: 0;
     background-color: var(--white);
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
-    justify-content: space-evenly;
+}
+
+.justify-card {
+    text-align: center;
+    padding: 30px 0 30px;
 }
 
 .team-name {
-    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
     color: var(--dark-grey);
-    display: flex;
-    justify-content: center;
 }
 
 .team-proffesion {
-    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
     color: var(--light-grey);
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
 }
 
 .footer {
     background-color: var(--footer);
 }
 
-.footer-spaceing {
-    padding: 60px;
-    margin: 0;
+.footer-grid {
+    padding: 60px 0;
 }
 
 .address-item {
@@ -250,15 +241,15 @@ body {
     color: var(--white);
 }
 
-.container {
-    margin-top: 94px;
+.content-grid {
+    padding: 94px 0;
 }
 
 .btn-section {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .btn-filter {
@@ -266,8 +257,7 @@ body {
     color: var(--black);
     border: none;
     cursor: pointer;
-    width: 121px;
-    height: 38px;
+    padding: 6px 22px;
 }
 
 .btn-filter:active {
@@ -282,16 +272,15 @@ body {
 }
 
 .project-list {
-    gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding: 0;
+    gap: 30px;
 }
 
 .project-item {
     background: var(--white);
     border: 1px solid #EEEEEE;
-    margin-left: 0px;
 }
 
 .project-item-header {
@@ -301,6 +290,7 @@ body {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--dark-grey);
+    text-align: center;
 }
 
 .project-item-paragraph {
@@ -310,4 +300,5 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--light-grey);
+    text-align: center;
 }
