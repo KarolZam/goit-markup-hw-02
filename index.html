@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="agency" href="images/agencja.html" />
-    <link rel="Contact" href="images/kontakt.html" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,15 +13,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="agency" href="images/agencja.html" />
+    <link rel="Contact" href="images/kontakt.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav class="site-nav">
-        <div class="wrapper flex-nav-container">
+    <header class="header-grid">
+      <nav>
+        <div class="container flex-nav-container">
           <div class="nav-box">
             <a class="logo" href="index.html">
               <span class="logo-color-web">Web</span
@@ -48,14 +48,14 @@
           <div class="contact-container">
             <a class="contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
-            ><br />
+            >
             <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
           </div>
         </div>
       </nav>
     </header>
     <section class="order">
-      <div class="order-container wrapper">
+      <div class="order-container container">
         <h1 class="order-header">
           Efektywne rozwiązania<br />
           dla waszego biznesu
@@ -63,38 +63,38 @@
         <button class="order-btn" type="button">Zamów usługe</button>
       </div>
     </section>
-    <main class="wrapper main-flex">
-      <div class="main-cont">
-        <h3 class="main-header">Lorem ipsum</h3>
-        <p class="main-text">
+    <section class="container description-flex">
+      <div class="description-cont">
+        <h3 class="description-header">Lorem ipsum</h3>
+        <p class="description-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
           sem. Sed non sodales dui. Interdum et malesuada
         </p>
       </div>
-      <div class="main-cont">
-        <h3 class="main-header">Lorem ipsum</h3>
-        <p class="main-text">
+      <div class="description-cont">
+        <h3 class="description-header">Lorem ipsum</h3>
+        <p class="description-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
           sem. Sed non sodales dui. Interdum et malesuada
         </p>
       </div>
-      <div class="main-cont">
-        <h3 class="main-header">Lorem ipsum</h3>
-        <p class="main-text">
+      <div class="description-cont">
+        <h3 class="description-header">Lorem ipsum</h3>
+        <p class="description-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
           sem. Sed non sodales dui. Interdum et malesuada
         </p>
       </div>
-      <div class="main-cont">
-        <h3 class="main-header">Lorem ipsum</h3>
-        <p class="main-text">
+      <div class="description-cont">
+        <h3 class="description-header">Lorem ipsum</h3>
+        <p class="description-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
           sem. Sed non sodales dui. Interdum et malesuada
         </p>
       </div>
-    </main>
+    </section>
     <section>
-      <div class="offert-grid wrapper">
+      <div class="offert-grid container">
         <h2 class="offert-header">Czym się zajmujemy</h2>
         <ul class="offert-list list">
           <li class="offert-list-item">
@@ -125,7 +125,7 @@
       </div>
     </section>
     <section class="team-section">
-      <div class="team-grid wrapper">
+      <div class="team-grid container">
         <h2 class="team-header">Nasz zespół</h2>
         <ul class="team-list list">
           <li>
@@ -188,7 +188,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-grid wrapper">
+      <div class="footer-grid container">
         <a class="logo" href="index.html">
           <span class="logo-color-web">Web</span
           ><span class="logo-color-studio-footer">Studio</span></a
