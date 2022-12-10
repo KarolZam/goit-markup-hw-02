@@ -1,343 +1,386 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-  --blue: #2196f3;
-  --dark-grey: #212121;
-  --light-grey: #757575;
-  --black: #000;
-  --white: #fff;
-  --buttons: #f5f4fa;
-  --footer: #2f303a;
+    --blue: #2196f3;
+    --dark-grey: #212121;
+    --light-grey: #757575;
+    --black: #000;
+    --white: #fff;
+    --buttons: #f5f4fa;
+    --footer: #2f303a;
 }
 
 body {
-  font-family: Roboto;
+    font-family: Roboto;
 }
 
 .header-grid {
-  padding: 25px;
+    padding: 25px;
 }
 
 .list {
-  list-style-type: none;
-  padding-left: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .site-nav {
-  border-bottom: 1px solid #ececec;
-  padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 25px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
-  font-family: Raleway;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  text-align: center;
+    font-family: Raleway;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
 }
 
 .logo-color-web {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 .logo-color-studio {
-  color: var(--black);
+    color: var(--black);
 }
 
 .logo-color-studio-footer {
-  color: var(--white);
+    color: var(--white);
 }
 
 .flex-nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-box {
-  display: flex;
-  align-items: center;
-  gap: 93px;
+    display: flex;
+    align-items: center;
+    gap: 93px;
 }
 
 .nav-links {
-  display: flex;
-  gap: 46px;
+    display: flex;
+    gap: 46px;
 }
 
 .nav-link {
-  text-decoration: none;
-  color: var(--dark-grey);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: center;
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .nav-link:hover,
 .contact:hover,
 .footer-item:hover {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 .contact-container {
-  display: flex;
-  gap: 50px;
+    display: flex;
+    gap: 50px;
 }
 
 .contact-item {
-  fill: currentColor;
+    fill: currentColor;
 }
 
 .contact-icon {
-  vertical-align: middle;
-  margin-right: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .contact {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
 .order {
-  background-color: var(--dark-grey);
+    background-color: var(--dark-grey);
+    background-image: url(../images/background-img.jpg), url(../images/background-cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
 }
 
 .order-container {
-  padding: 200px 15px;
-  text-align: center;
+    padding: 200px 15px;
+    text-align: center;
 }
 
 .order-header {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
 }
 
 .order-btn {
-  margin-top: 40px;
-  background: var(--blue);
-  color: var(--white);
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-  padding: 10px 41px;
-  border: none;
+    margin-top: 40px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 41px;
+    border: none;
 }
 
 .order-btn:hover {
-  background-color: var(--white);
-  color: var(--blue);
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .description-flex {
-  display: flex;
-  padding-top: 94px;
-  gap: 30px;
+    display: flex;
+    padding-top: 94px;
+    gap: 30px;
 }
 
 .description-background {
-  text-align: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
+    text-align: center;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
 }
 
 .description-icon {
-  text-align: center;
-  margin: 25px 0px;
+    text-align: center;
+    margin: 25px 0px;
 }
 
 .description-header {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  color: var(--dark-grey);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--dark-grey);
 }
 
 .description-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: var(--light-grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--light-grey);
 }
 
 .offert-grid {
-  padding: 94px 0;
+    padding: 94px 0;
 }
 
 .offert-header {
-  font-size: 36px;
-  color: var(--dark-grey);
-  text-align: center;
-  margin-bottom: 50px;
+    font-size: 36px;
+    color: var(--dark-grey);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .offert-list {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .team-section {
-  background-color: #f5f4fa;
+    background-color: #f5f4fa;
 }
 
 .team-grid {
-  padding: 94px 0;
+    padding: 94px 0;
 }
 
 .team-header {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  color: var(--dark-grey);
-  text-align: center;
-  margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .team-list {
-  display: flex;
-  gap: 30px;
-  padding: 0;
+    display: flex;
+    gap: 30px;
+    padding: 0;
 }
 
 .team-item {
-  background-color: var(--white);
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
+    background-color: var(--white);
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001f;
 }
 
 .justify-card {
-  text-align: center;
-  padding: 30px 0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.description-icon {
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.description-icon:hover {
+    --color2: var(--blue);
+    --color1: var(--white);
 }
 
 .team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: var(--dark-grey);
-  margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
 }
 
 .team-proffesion {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: var(--light-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--light-grey);
+}
+
+.clients-content{
+    margin: 94px 0px;
+    text-align: center;
+}
+
+.clients-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey);
+    text-align: center;
+}
+
+.client-icons-box {
+    margin-top: 50px;
+}
+
+.clients-icon {
+    gap: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-icon:hover {
+    border: 1px solid var(--blue);
+    --color1: var(--blue);
 }
 
 .footer {
-  background-color: var(--footer);
+    background-color: var(--footer);
 }
 
 .footer-grid {
-  padding: 60px 0;
+    padding: 60px 0;
 }
 
 .address-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white);
 }
 
 .footer-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--white);
 }
 
 .content-grid {
-  padding: 94px 0;
+    padding: 94px 0;
 }
 
 .btn-section {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .btn-filter {
-  background-color: var(--buttons);
-  color: var(--black);
-  border: none;
-  cursor: pointer;
-  padding: 6px 22px;
+    background-color: var(--buttons);
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
 }
 
 .btn-filter:active {
-  background-color: var(--blue);
-  color: var(--white);
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .btn-filter:hover {
-  background-color: var(--blue);
-  color: var(--white);
-  box-shadow: 0px 2px 2px 0px #0000001f;
+    background-color: var(--blue);
+    color: var(--white);
+    box-shadow: 0px 2px 2px 0px #0000001f;
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
 }
 
 .project-item {
-  background: var(--white);
-  border: 1px solid #eeeeee;
+    background: var(--white);
+    border: 1px solid #eeeeee;
 }
 
 .project-item-des {
-  padding: 20px 24px;
+    padding: 20px 24px;
 }
 
 .project-item-header {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  color: var(--dark-grey);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--dark-grey);
 }
 
 .project-item-paragraph {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--light-grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--light-grey);
 }
