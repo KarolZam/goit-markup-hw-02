@@ -108,7 +108,7 @@ body {
 
 .contact {
     text-decoration: none;
-    color: var(--black);
+    color: var(--light-grey);
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -140,7 +140,7 @@ body {
 }
 
 .order-btn {
-    margin-top: 40px;
+    margin-top: 30px;
     background: var(--blue);
     color: var(--white);
     border-radius: 4px;
@@ -163,16 +163,13 @@ body {
 
 .description-background {
     text-align: center;
-    width: 270px;
-    height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
 }
 
-.description-icon {
-    text-align: center;
-    margin: 25px 0px;
-}
 
 .description-header {
     font-size: 14px;
@@ -240,16 +237,6 @@ body {
     padding: 30px 0;
 }
 
-.description-icon {
-    gap: 10px;
-    margin-bottom: 0;
-}
-
-.description-icon:hover {
-    --color2: var(--blue);
-    --color1: var(--white);
-}
-
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -265,6 +252,33 @@ body {
     line-height: 19px;
     letter-spacing: 0.03em;
     color: var(--light-grey);
+}
+
+.icons-bar {
+    margin: 16px 32px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.description-icon-box {
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    max-height: 44px;
+    text-decoration: none;
+}
+
+.description-icon-box:hover {
+    background-color: var(--blue);
+}
+
+.description-icon {
+    fill: #AFB1B8;
+}
+
+.description-icon:hover {
+    fill: var(--white);
 }
 
 .clients-section {
@@ -295,18 +309,15 @@ body {
 .client-icon-box {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-.client-icon {
-    margin: auto 32px;
-}
-
-.client-icon:hover {
-    --color1: var(--blue);
+    padding: 16px 32px;
 }
 
 .client-icon-box:hover {
     border-color: var(--blue);
+}
+
+.client-icon:hover {
+    --color1: var(--blue)
 }
 
 .footer {
@@ -351,13 +362,25 @@ body {
     padding-bottom: 20px;
 }
 
-.join-us-icon {
-    --color1: var(--white);
-    --color2: rgba(255, 255, 255, 0.1);
+.join-us-container {
+    display: flex;
+    gap: 10px;
+    max-height: 44px;
 }
 
-.join-us-icon:hover {
-    --color2: var(--blue)
+.join-us-icon-box {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-us-icon-box:hover {
+    background-color: var(--blue);
+}
+
+.join-us-icon {
+    fill: var(--white);
 }
 
 .content-grid {
