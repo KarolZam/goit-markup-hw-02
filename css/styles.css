@@ -267,9 +267,12 @@ body {
     color: var(--light-grey);
 }
 
-.clients-content{
-    margin: 94px 0px;
-    text-align: center;
+.clients-section {
+    padding: 94px 0;
+}
+
+.clients-content {
+    padding: 94px 0px;
 }
 
 .clients-header {
@@ -281,19 +284,29 @@ body {
     text-align: center;
 }
 
-.client-icons-box {
-    margin-top: 50px;
+.clients-icons-box {
+    list-style-type: none;
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    gap: 30px;
 }
 
-.clients-icon {
-    gap: 30px;
+.client-icon-box {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.clients-icon:hover {
-    border: 1px solid var(--blue);
+.client-icon {
+    margin: auto 32px;
+}
+
+.client-icon:hover {
     --color1: var(--blue);
+}
+
+.client-icon-box:hover {
+    border-color: var(--blue);
 }
 
 .footer {
@@ -302,6 +315,11 @@ body {
 
 .footer-grid {
     padding: 60px 0;
+}
+
+.footer-box {
+    display: flex;
+    gap: 70px;
 }
 
 .address-item {
@@ -319,6 +337,27 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--white);
+}
+
+.join-us-box {
+    margin-top: 12px
+}
+
+.join-us-header {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding-bottom: 20px;
+}
+
+.join-us-icon {
+    --color1: var(--white);
+    --color2: rgba(255, 255, 255, 0.1);
+}
+
+.join-us-icon:hover {
+    --color2: var(--blue)
 }
 
 .content-grid {
@@ -345,11 +384,14 @@ body {
     color: var(--white);
 }
 
-.btn-filter:hover {
+.btn-filter:hover, .btn-filter:focus {
     background-color: var(--blue);
     color: var(--white);
-    box-shadow: 0px 2px 2px 0px #0000001f;
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
 }
+
 
 .project-list {
     display: flex;
@@ -361,6 +403,12 @@ body {
 .project-item {
     background: var(--white);
     border: 1px solid #eeeeee;
+}
+
+.project-item:hover {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 0px 1px 1px 0px #0000001F;
 }
 
 .project-item-des {
