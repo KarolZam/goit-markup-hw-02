@@ -255,30 +255,28 @@ body {
 }
 
 .icons-bar {
-    margin: 16px 32px;
+    margin-top: 16px;
     display: flex;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 30px;
 }
 
-.description-icon-box {
-    align-items: center;
+.description-icon-box a {
+    fill: #AFB1B8;;
     padding: 12px;
     border-radius: 50%;
-    max-height: 44px;
-    text-decoration: none;
 }
 
-.description-icon-box:hover {
+.description-icon-box a:hover {
+    fill: var(--white);
     background-color: var(--blue);
 }
 
-.description-icon {
-    fill: #AFB1B8;
-}
-
-.description-icon:hover {
-    fill: var(--white);
+.description-icon-box a svg{
+    padding-top: 5px;
 }
 
 .clients-section {
@@ -299,25 +297,22 @@ body {
 }
 
 .clients-icons-box {
-    list-style-type: none;
-    display: flex;
-    padding: 50px 0;
-    justify-content: center;
+    display: inline-flex;
     gap: 30px;
+    padding-top: 50px;
 }
 
-.client-icon-box {
-    border: 1px solid #AFB1B8;
+.clients-icons-box a{
+    border: 1px solid #afb1b8;
     border-radius: 4px;
-    padding: 16px 32px;
+    fill: black;
+    padding: 17.71px 32px 14.25px 32px;
 }
 
-.client-icon-box:hover {
-    border-color: var(--blue);
-}
-
-.client-icon:hover {
-    --color1: var(--blue)
+.clients-icons-box a:hover{
+    --color1: var(--blue);
+    border: 1px solid var(--blue);
+    outline: none;
 }
 
 .footer {
