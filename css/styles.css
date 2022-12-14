@@ -265,6 +265,8 @@ body {
 }
 
 .description-icon {
+    display: flex;
+    justify-content: center;
     fill: #AFB1B8;
     padding: 12px;
     border-radius: 50%;
@@ -295,7 +297,7 @@ body {
 .clients-icons-box {
     display: inline-flex;
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .clients-icon {
