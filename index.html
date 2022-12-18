@@ -36,7 +36,7 @@
             >
             <ul class="nav-links list">
               <li class="nav-item">
-                <a class="nav-link" href="./agencja.html">Agencja</a>
+                <a class="nav-link is-active" href="index.html">Agencja</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -74,7 +74,9 @@
             Efektywne rozwiązania<br />
             dla waszego biznesu
           </h1>
-          <button class="order-btn" type="button">Zamów usługe</button>
+          <button data-modal-open class="order-btn" type="button">
+            Zamów usługe
+          </button>
         </div>
       </section>
       <section class="container description-flex">
@@ -138,6 +140,11 @@
                 width="370"
                 height="294"
               />
+              <div class="offert-list-item-des">
+                <span class="offert-list-item-des-text"
+                  >aplikacje komputerowe</span
+                >
+              </div>
             </li>
             <li class="offert-list-item">
               <img
@@ -146,6 +153,9 @@
                 width="370"
                 height="294"
               />
+              <div class="offert-list-item-des">
+                <span class="offert-list-item-des-text">aplikacje mobilne</span>
+              </div>
             </li>
             <li class="offert-list-item">
               <img
@@ -154,6 +164,11 @@
                 width="370"
                 height="294"
               />
+              <div class="offert-list-item-des">
+                <span class="offert-list-item-des-text"
+                  >rozwiązania graficzne</span
+                >
+              </div>
             </li>
           </ul>
         </div>
@@ -435,5 +450,17 @@
         </div>
       </footer>
     </main>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-closing-button" data-modal-close>
+          <img
+            src="./images/close-button.svg"
+            alt="closing button"
+            width="18"
+          />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
