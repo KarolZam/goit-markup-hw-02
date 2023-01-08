@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #2196f3;
+    --dark-grey: #212121;
+    --light-grey: #757575;
+    --black: #000;
+    --white: #fff;
+    --buttons: #f5f4fa;
+    --footer: #2f303a;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.is-active::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--blue);
+    left: 0;
+    bottom: -32px;
+    border-radius: 2px;
+}
+
+.portfolio-main {
+    padding: 94px 0;
+}
+
+.site-nav {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 25px;
+}
