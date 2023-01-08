@@ -1,0 +1,46 @@
+.offert {
+    padding: 94px 0;
+
+    &__header {
+        font-size: 36px;
+        color: $dark-grey;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.offert-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    &__item {
+        position: relative;
+    }
+    __panel {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}&__panel {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+&__panel-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+}
+}
